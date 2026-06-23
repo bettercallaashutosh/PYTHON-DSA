@@ -1,5 +1,3 @@
-# GET AND SEARCH
-
 # Fixed-size array operations
 
 capacity = 5
@@ -21,9 +19,6 @@ def insert(index, value):
     arr[index] = value
     size +=1
     
-
-
-
 def delete(index):
     global size
     if index < 0 or index >= size:
@@ -36,22 +31,11 @@ def delete(index):
     size -= 1
     print(arr)
 
-
-
-
 def display():
     for i in range(size):
         print(arr[i], end=" ")
     print()
 
-
-insert(0,10)
-insert(1,20)
-insert(2,30)
-
-
-    
-   
 def get(index):
     if index < 0 or index >= size:
         print('invalid index')
@@ -66,8 +50,10 @@ def search(value):
         
     return -1
 
+insert(0,10)
+insert(1,20)
+insert(2,30)
 get(0)
 get(10)
-
 print(search(20))
 print(search(200))
