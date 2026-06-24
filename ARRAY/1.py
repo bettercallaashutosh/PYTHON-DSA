@@ -10,7 +10,7 @@ def insert(index, value):
         print('array is full')
         return
     if 0 > index or index > size :
-        print('invalid index')
+        print('invalid index') 
         return
     
     for i in range(size-1,index-1,-1):
